@@ -181,8 +181,16 @@ const getMyApi = () => {
         name: each.name,
         body: each.body,
       }));
+
       console.log("Comments Data:", MyComData);
+      const getOnly = result.filter((each, idx)=>{
+        return each.id ===  "Nicklaus@talon.io";
+  
+      })
+  console.log(getOnly);
     })
+ 
+
 };
 getMyApi();
 
